@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderView" id="U6b-Vx-4bR" customClass="DWHeaderCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门歌单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9c0-6k-Px3">
+                    <rect key="frame" x="10" y="15" width="230" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.54159335580000001" green="0.55868931860000004" blue="0.82733585860000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPb-QC-vFv">
+                    <rect key="frame" x="260" y="10" width="45" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="8Ej-2a-DVE"/>
+                    </constraints>
+                    <state key="normal" title="更多">
+                        <color key="titleColor" red="0.54159335580000001" green="0.55868931860000004" blue="0.82733585860000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rPb-QC-vFv" secondAttribute="trailing" constant="15" id="B6p-iY-7Mz"/>
+                <constraint firstAttribute="bottom" secondItem="rPb-QC-vFv" secondAttribute="bottom" constant="10" id="Fht-Wi-cMJ"/>
+                <constraint firstItem="9c0-6k-Px3" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="Hjj-CW-1lG"/>
+                <constraint firstItem="rPb-QC-vFv" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="I9c-HG-q8d"/>
+                <constraint firstItem="rPb-QC-vFv" firstAttribute="leading" secondItem="9c0-6k-Px3" secondAttribute="trailing" constant="20" id="bHk-fa-BVC"/>
+                <constraint firstItem="9c0-6k-Px3" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="uXJ-fY-agt"/>
+            </constraints>
+            <connections>
+                <outlet property="button" destination="rPb-QC-vFv" id="cCP-ve-PO6"/>
+                <outlet property="label" destination="9c0-6k-Px3" id="pvh-NA-990"/>
+            </connections>
+            <point key="canvasLocation" x="342" y="214"/>
+        </collectionReusableView>
+    </objects>
+</document>
